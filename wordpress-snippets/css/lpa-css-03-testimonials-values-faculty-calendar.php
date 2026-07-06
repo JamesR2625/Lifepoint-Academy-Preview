@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 03 - Testimonials, Academics, Faculty, Admissions, Calendar
  *
  * Testimonials, values, academics, faculty/staff cards, admissions steps, and visible calendar styling.
- * Source: assets/css/style.css lines 1236-1794.
+ * Source: assets/css/style.css lines 1254-1979.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
@@ -113,12 +113,12 @@ add_action('wp_head', function () {
 
 .lpa-value-card p {
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
 }
 
 /* Values section dark background */
 .lpa-values-section {
-  background: var(--navy);
+  background: var(--royal-dark);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -162,7 +162,7 @@ add_action('wp_head', function () {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(27,42,74,0.05);
+  background: rgba(77,105,177,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,14 +201,14 @@ add_action('wp_head', function () {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 42px;
   min-height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 22px 48px rgba(15,47,94,0.18);
+  box-shadow: 0 22px 48px rgba(31,46,86,0.18);
 }
 
 .lpa-accreditation-feature::after {
@@ -303,20 +303,20 @@ add_action('wp_head', function () {
   border-left: 5px solid var(--navy);
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lpa-accreditation-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 38px rgba(15,47,94,0.1);
+  box-shadow: 0 18px 38px rgba(31,46,86,0.1);
 }
 
 .lpa-accreditation-icon {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
   color: var(--navy);
   display: flex;
   align-items: center;
@@ -330,7 +330,7 @@ add_action('wp_head', function () {
 }
 
 .lpa-accreditation-item p {
-  color: #536273;
+  color: #4D4D4D;
   font-size: 0.94rem;
   line-height: 1.65;
   margin-bottom: 0;
@@ -348,7 +348,7 @@ add_action('wp_head', function () {
   min-width: 92px;
   min-height: 32px;
   border-radius: 999px;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
   color: var(--navy);
   font-size: 0.82rem;
   font-weight: 700;
@@ -367,17 +367,17 @@ add_action('wp_head', function () {
 .lpa-staff-card {
   text-align: center;
   padding: 14px 14px 20px;
-  border: 1px solid rgba(28,79,145,0.1);
+  border: 1px solid rgba(77,105,177,0.1);
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.86);
-  box-shadow: 0 14px 34px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 34px rgba(31,46,86,0.06);
   transition: var(--transition);
 }
 
 .lpa-staff-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(28,79,145,0.18);
+  border-color: rgba(77,105,177,0.18);
 }
 
 .lpa-staff-card:hover .lpa-staff-photo-placeholder {
@@ -401,7 +401,7 @@ add_action('wp_head', function () {
   font-size: 3.5rem;
   color: rgba(0,0,0,0.12);
   margin-bottom: 16px;
-  border: 1px solid rgba(28,79,145,0.08);
+  border: 1px solid rgba(77,105,177,0.08);
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -417,8 +417,8 @@ add_action('wp_head', function () {
   object-position: center top;
   border-radius: var(--radius-lg);
   margin-bottom: 16px;
-  border: 1px solid rgba(28,79,145,0.08);
-  box-shadow: 0 12px 26px rgba(15,47,94,0.1);
+  border: 1px solid rgba(77,105,177,0.08);
+  box-shadow: 0 12px 26px rgba(31,46,86,0.1);
 }
 
 .lpa-staff-info h3 {
@@ -443,11 +443,11 @@ add_action('wp_head', function () {
 /* Principal card (featured) */
 .lpa-principal-card {
   background:
-    linear-gradient(135deg, rgba(28,79,145,0.08) 0%, rgba(255,255,255,0.97) 42%, rgba(244,247,251,0.98) 100%);
+    linear-gradient(135deg, rgba(77,105,177,0.08) 0%, rgba(255,255,255,0.97) 42%, rgba(244,247,251,0.98) 100%);
   border-radius: var(--radius-xl);
   padding: 48px;
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(28,79,145,0.12);
+  border: 1px solid rgba(77,105,177,0.12);
   display: flex;
   gap: 48px;
   align-items: center;
@@ -462,7 +462,7 @@ add_action('wp_head', function () {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.1);
+  background: rgba(77,105,177,0.1);
 }
 
 .lpa-principal-card::after {
@@ -472,7 +472,7 @@ add_action('wp_head', function () {
   bottom: 0;
   width: 34%;
   height: 100%;
-  background-image: radial-gradient(rgba(28,79,145,0.13) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(77,105,177,0.13) 1px, transparent 1px);
   background-size: 18px 18px;
   opacity: 0.42;
 }
@@ -528,9 +528,9 @@ add_action('wp_head', function () {
   align-items: flex-start;
   padding: 22px;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(28,79,145,0.12);
+  border: 1px solid rgba(77,105,177,0.12);
   background: var(--white);
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
 }
 
 .lpa-faculty-promise i {

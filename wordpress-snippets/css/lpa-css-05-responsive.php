@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 05 - Responsive Rules
  *
  * All responsive media queries. Keep this snippet last.
- * Source: assets/css/style.css lines 2492-2648.
+ * Source: assets/css/style.css lines 2668-2842.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {

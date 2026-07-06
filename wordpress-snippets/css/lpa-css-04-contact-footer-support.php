@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 04 - Contact, Footer, Utilities, Support
  *
  * Contact form, campus map, CTA banner, footer, utility classes, support page, student-life anchor nav, and staff section headings.
- * Source: assets/css/style.css lines 1795-2491.
+ * Source: assets/css/style.css lines 1981-2666.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
@@ -67,7 +67,7 @@ add_action('wp_head', function () {
 .lpa-form-group select:focus {
   outline: none;
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(28,79,145,0.15);
+  box-shadow: 0 0 0 3px rgba(77,105,177,0.15);
   background: var(--white);
 }
 
@@ -118,7 +118,7 @@ add_action('wp_head', function () {
 }
 
 .lpa-contact-info-card {
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 40px;
   border-radius: var(--radius-xl);
@@ -236,7 +236,7 @@ add_action('wp_head', function () {
 
 /* ---------- CTA Banner ---------- */
 .lpa-cta-banner {
-  background: linear-gradient(to right, var(--navy-dark) 0%, var(--navy) 100%);
+  background: linear-gradient(to right, var(--navy-dark) 0%, var(--royal-dark) 100%);
   padding: 80px 0;
   text-align: center;
   position: relative;
@@ -471,7 +471,7 @@ add_action('wp_head', function () {
 
 .lpa-photo-depth {
   position: relative;
-  filter: drop-shadow(0 22px 34px rgba(15,47,94,0.18));
+  filter: drop-shadow(0 22px 34px rgba(31,46,86,0.18));
 }
 
 .lpa-photo-depth::before {
@@ -479,7 +479,7 @@ add_action('wp_head', function () {
   position: absolute;
   inset: 18px -16px -18px 24px;
   border-radius: var(--radius-xl);
-  background: rgba(28,79,145,0.12);
+  background: rgba(77,105,177,0.12);
   z-index: -1;
 }
 
@@ -490,7 +490,7 @@ add_action('wp_head', function () {
   max-width: 340px;
   padding: 16px 18px;
   border-radius: var(--radius-md);
-  background: rgba(15,47,94,0.88);
+  background: rgba(31,46,86,0.88);
   color: var(--white);
   font-size: 0.9rem;
   line-height: 1.55;
@@ -594,7 +594,7 @@ add_action('wp_head', function () {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
 }
 
 .lpa-support-story-content h2 {
@@ -602,7 +602,7 @@ add_action('wp_head', function () {
 }
 
 .lpa-support-lead {
-  color: #2E3A46;
+  color: #4D4D4D;
   font-size: 1.12rem;
   line-height: 1.85;
 }

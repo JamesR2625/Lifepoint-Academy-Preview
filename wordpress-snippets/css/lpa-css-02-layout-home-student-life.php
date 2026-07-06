@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 02 - Layout, Home, Student Life Blocks
  *
  * Shared feature layouts, stats, two-column content, homepage feature sections, student-life feature blocks, and handbook styles.
- * Source: assets/css/style.css lines 590-1235.
+ * Source: assets/css/style.css lines 604-1252.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
@@ -125,7 +125,7 @@ add_action('wp_head', function () {
   content: '';
   position: absolute;
   inset: -12px;
-  background: rgba(28,79,145,0.12);
+  background: rgba(77,105,177,0.12);
   border-radius: var(--radius-xl);
   transform: rotate(3deg);
   z-index: -1;
@@ -136,7 +136,7 @@ add_action('wp_head', function () {
   position: absolute;
   bottom: -20px;
   right: -10px;
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 20px 24px;
   border-radius: var(--radius-xl);
@@ -158,7 +158,7 @@ add_action('wp_head', function () {
 
 .lpa-image-badge .lpa-badge-sub {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
 }
 
 .lpa-two-col-content h2 { margin-bottom: 16px; }
@@ -200,10 +200,10 @@ add_action('wp_head', function () {
   gap: 34px;
   align-items: stretch;
   padding: 38px;
-  border: 1px solid rgba(28,79,145,0.14);
+  border: 1px solid rgba(77,105,177,0.14);
   border-radius: var(--radius-xl);
   background:
-    linear-gradient(135deg, rgba(28,79,145,0.08) 0%, rgba(255,255,255,0.96) 36%, rgba(244,247,251,0.98) 100%);
+    linear-gradient(135deg, rgba(77,105,177,0.08) 0%, rgba(255,255,255,0.96) 36%, rgba(244,247,251,0.98) 100%);
   box-shadow: var(--shadow-xl);
   position: relative;
   overflow: hidden;
@@ -216,7 +216,7 @@ add_action('wp_head', function () {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.1);
+  background: rgba(77,105,177,0.1);
 }
 
 .lpa-affordability-panel::after {
@@ -226,7 +226,7 @@ add_action('wp_head', function () {
   bottom: 0;
   width: 38%;
   height: 100%;
-  background-image: radial-gradient(rgba(28,79,145,0.14) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(77,105,177,0.14) 1px, transparent 1px);
   background-size: 18px 18px;
   opacity: 0.42;
   pointer-events: none;
@@ -306,7 +306,7 @@ add_action('wp_head', function () {
   padding: 18px 20px;
   border-left: 4px solid var(--gold);
   border-radius: var(--radius-md);
-  background: rgba(15,47,94,0.94);
+  background: rgba(31,46,86,0.94);
   color: var(--white);
   box-shadow: var(--shadow-md);
 }
@@ -341,10 +341,10 @@ add_action('wp_head', function () {
   gap: 14px;
   align-items: flex-start;
   padding: 18px;
-  border: 1px solid rgba(28,79,145,0.13);
+  border: 1px solid rgba(77,105,177,0.13);
   border-radius: var(--radius-md);
   background: rgba(255,255,255,0.88);
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
 }
 
 .lpa-affordability-icon {
@@ -409,7 +409,7 @@ add_action('wp_head', function () {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
 }
 
 .lpa-asf-logo {
@@ -500,7 +500,7 @@ add_action('wp_head', function () {
 }
 
 .lpa-security-points span {
-  color: #2E3A46;
+  color: #4D4D4D;
   font-weight: 500;
   line-height: 1.55;
 }

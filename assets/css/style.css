@@ -1,24 +1,27 @@
 /* ---------- CSS Variables ----------
-   Brand palette per LPA Style Guide:
-   Nautical Blue (Pantone 19-4050 TPX, #1C4F91), White, Black.
-   --gold* tokens are legacy names retained to minimize churn — they now map
-   to neutrals (white/navy) so accents stay on-brand.
+   Brand palette per updated LPA brand colors (school email, July 2026):
+   Royal Blue (CMYK 77/62/0/0, #4D69B1) and Dark Gray (CMYK 0/0/0/70, #4D4D4D),
+   plus White. Supersedes the original style guide's Nautical Blue. Font
+   remains Tahoma per the LPA Style Guide. Darker royal shades are derived
+   for backgrounds so white text keeps WCAG AA contrast.
+   The --navy and --gold token names are legacy, retained to minimize churn.
    ---------------------------------- */
 :root {
-  --navy: #1C4F91;
-  --navy-light: #3A6CAB;
-  --navy-dark: #0F2F5E;
+  --navy: #4D69B1;        /* brand Royal Blue — accents, buttons, headings */
+  --navy-light: #5470B7;  /* hover states */
+  --navy-dark: #1F2E56;   /* deep royal navy — footer, top bar, hero overlay */
+  --royal-dark: #35497F;  /* solid backgrounds behind white body text */
   --gold: #FFFFFF;
   --gold-light: #FFFFFF;
-  --gold-dark: #1C4F91;
+  --gold-dark: #4D69B1;
   --white: #FFFFFF;
   --off-white: #F8F9FA;
   --light-gray: #E9ECEF;
-  --gray: #6C757D;
-  --dark: #000000;
-  --blue-accent: #1C4F91;
+  --gray: #65707A;
+  --dark: #4D4D4D;        /* brand Dark Gray — body text */
+  --blue-accent: #4D69B1;
   --success: #28A745;
-  --red-muted: #D9534F;
+  --red-muted: #C24541;
   --font-heading: Tahoma, Geneva, Verdana, sans-serif;
   --font-body: Tahoma, Geneva, Verdana, sans-serif;
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
@@ -88,7 +91,7 @@ body:has(.lpa-site),
 .lpa-site h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 600; }
 .lpa-site h4 { font-size: 1.25rem; font-weight: 600; }
 
-.lpa-site p { margin-bottom: 1rem; color: #444; }
+.lpa-site p { margin-bottom: 1rem; color: var(--dark); }
 
 .lpa-container {
   max-width: 1200px;
@@ -166,7 +169,7 @@ body:has(.lpa-site),
 .lpa-site .lpa-btn-outline-navy {
   background: var(--white);
   color: var(--navy);
-  border-color: rgba(28,79,145,0.35);
+  border-color: rgba(77,105,177,0.35);
   backdrop-filter: none;
 }
 .lpa-site .lpa-btn-outline-navy:hover {
@@ -469,8 +472,8 @@ body:has(.lpa-site),
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 42% 42%, rgba(28,79,145,0.38) 0%, rgba(28,79,145,0.05) 34%, transparent 58%),
-    linear-gradient(to right, rgba(15,47,94,0.96) 0%, rgba(15,47,94,0.82) 42%, rgba(15,47,94,0.32) 100%);
+    radial-gradient(circle at 42% 42%, rgba(77,105,177,0.38) 0%, rgba(77,105,177,0.05) 34%, transparent 58%),
+    linear-gradient(to right, rgba(31,46,86,0.96) 0%, rgba(31,46,86,0.82) 42%, rgba(31,46,86,0.32) 100%);
 }
 
 .lpa-hero-content {
@@ -531,7 +534,7 @@ body:has(.lpa-site),
 
 /* ---------- Page Header (interior pages) ---------- */
 .lpa-page-header {
-  background: var(--navy);
+  background: var(--royal-dark);
   padding: 80px 0 60px;
   text-align: center;
   position: relative;
@@ -714,7 +717,7 @@ body:has(.lpa-site),
   content: '';
   position: absolute;
   inset: -12px;
-  background: rgba(28,79,145,0.12);
+  background: rgba(77,105,177,0.12);
   border-radius: var(--radius-xl);
   transform: rotate(3deg);
   z-index: -1;
@@ -725,7 +728,7 @@ body:has(.lpa-site),
   position: absolute;
   bottom: -20px;
   right: -10px;
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 20px 24px;
   border-radius: var(--radius-xl);
@@ -747,7 +750,7 @@ body:has(.lpa-site),
 
 .lpa-image-badge .lpa-badge-sub {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
 }
 
 .lpa-two-col-content h2 { margin-bottom: 16px; }
@@ -789,10 +792,10 @@ body:has(.lpa-site),
   gap: 34px;
   align-items: stretch;
   padding: 38px;
-  border: 1px solid rgba(28,79,145,0.14);
+  border: 1px solid rgba(77,105,177,0.14);
   border-radius: var(--radius-xl);
   background:
-    linear-gradient(135deg, rgba(28,79,145,0.08) 0%, rgba(255,255,255,0.96) 36%, rgba(244,247,251,0.98) 100%);
+    linear-gradient(135deg, rgba(77,105,177,0.08) 0%, rgba(255,255,255,0.96) 36%, rgba(244,247,251,0.98) 100%);
   box-shadow: var(--shadow-xl);
   position: relative;
   overflow: hidden;
@@ -805,7 +808,7 @@ body:has(.lpa-site),
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.1);
+  background: rgba(77,105,177,0.1);
 }
 
 .lpa-affordability-panel::after {
@@ -815,7 +818,7 @@ body:has(.lpa-site),
   bottom: 0;
   width: 38%;
   height: 100%;
-  background-image: radial-gradient(rgba(28,79,145,0.14) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(77,105,177,0.14) 1px, transparent 1px);
   background-size: 18px 18px;
   opacity: 0.42;
   pointer-events: none;
@@ -895,7 +898,7 @@ body:has(.lpa-site),
   padding: 18px 20px;
   border-left: 4px solid var(--gold);
   border-radius: var(--radius-md);
-  background: rgba(15,47,94,0.94);
+  background: rgba(31,46,86,0.94);
   color: var(--white);
   box-shadow: var(--shadow-md);
 }
@@ -930,10 +933,10 @@ body:has(.lpa-site),
   gap: 14px;
   align-items: flex-start;
   padding: 18px;
-  border: 1px solid rgba(28,79,145,0.13);
+  border: 1px solid rgba(77,105,177,0.13);
   border-radius: var(--radius-md);
   background: rgba(255,255,255,0.88);
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
 }
 
 .lpa-affordability-icon {
@@ -998,7 +1001,7 @@ body:has(.lpa-site),
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
 }
 
 .lpa-asf-logo {
@@ -1089,7 +1092,7 @@ body:has(.lpa-site),
 }
 
 .lpa-security-points span {
-  color: #2E3A46;
+  color: #4D4D4D;
   font-weight: 500;
   line-height: 1.55;
 }
@@ -1352,12 +1355,12 @@ body:has(.lpa-site),
 
 .lpa-value-card p {
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
 }
 
 /* Values section dark background */
 .lpa-values-section {
-  background: var(--navy);
+  background: var(--royal-dark);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -1401,7 +1404,7 @@ body:has(.lpa-site),
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(27,42,74,0.05);
+  background: rgba(77,105,177,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1440,14 +1443,14 @@ body:has(.lpa-site),
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 42px;
   min-height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 22px 48px rgba(15,47,94,0.18);
+  box-shadow: 0 22px 48px rgba(31,46,86,0.18);
 }
 
 .lpa-accreditation-feature::after {
@@ -1542,20 +1545,20 @@ body:has(.lpa-site),
   border-left: 5px solid var(--navy);
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lpa-accreditation-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 38px rgba(15,47,94,0.1);
+  box-shadow: 0 18px 38px rgba(31,46,86,0.1);
 }
 
 .lpa-accreditation-icon {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
   color: var(--navy);
   display: flex;
   align-items: center;
@@ -1569,7 +1572,7 @@ body:has(.lpa-site),
 }
 
 .lpa-accreditation-item p {
-  color: #536273;
+  color: #4D4D4D;
   font-size: 0.94rem;
   line-height: 1.65;
   margin-bottom: 0;
@@ -1587,7 +1590,7 @@ body:has(.lpa-site),
   min-width: 92px;
   min-height: 32px;
   border-radius: 999px;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
   color: var(--navy);
   font-size: 0.82rem;
   font-weight: 700;
@@ -1606,17 +1609,17 @@ body:has(.lpa-site),
 .lpa-staff-card {
   text-align: center;
   padding: 14px 14px 20px;
-  border: 1px solid rgba(28,79,145,0.1);
+  border: 1px solid rgba(77,105,177,0.1);
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.86);
-  box-shadow: 0 14px 34px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 34px rgba(31,46,86,0.06);
   transition: var(--transition);
 }
 
 .lpa-staff-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(28,79,145,0.18);
+  border-color: rgba(77,105,177,0.18);
 }
 
 .lpa-staff-card:hover .lpa-staff-photo-placeholder {
@@ -1640,7 +1643,7 @@ body:has(.lpa-site),
   font-size: 3.5rem;
   color: rgba(0,0,0,0.12);
   margin-bottom: 16px;
-  border: 1px solid rgba(28,79,145,0.08);
+  border: 1px solid rgba(77,105,177,0.08);
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -1656,8 +1659,8 @@ body:has(.lpa-site),
   object-position: center top;
   border-radius: var(--radius-lg);
   margin-bottom: 16px;
-  border: 1px solid rgba(28,79,145,0.08);
-  box-shadow: 0 12px 26px rgba(15,47,94,0.1);
+  border: 1px solid rgba(77,105,177,0.08);
+  box-shadow: 0 12px 26px rgba(31,46,86,0.1);
 }
 
 .lpa-staff-info h3 {
@@ -1682,11 +1685,11 @@ body:has(.lpa-site),
 /* Principal card (featured) */
 .lpa-principal-card {
   background:
-    linear-gradient(135deg, rgba(28,79,145,0.08) 0%, rgba(255,255,255,0.97) 42%, rgba(244,247,251,0.98) 100%);
+    linear-gradient(135deg, rgba(77,105,177,0.08) 0%, rgba(255,255,255,0.97) 42%, rgba(244,247,251,0.98) 100%);
   border-radius: var(--radius-xl);
   padding: 48px;
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(28,79,145,0.12);
+  border: 1px solid rgba(77,105,177,0.12);
   display: flex;
   gap: 48px;
   align-items: center;
@@ -1701,7 +1704,7 @@ body:has(.lpa-site),
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.1);
+  background: rgba(77,105,177,0.1);
 }
 
 .lpa-principal-card::after {
@@ -1711,7 +1714,7 @@ body:has(.lpa-site),
   bottom: 0;
   width: 34%;
   height: 100%;
-  background-image: radial-gradient(rgba(28,79,145,0.13) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(77,105,177,0.13) 1px, transparent 1px);
   background-size: 18px 18px;
   opacity: 0.42;
 }
@@ -1767,9 +1770,9 @@ body:has(.lpa-site),
   align-items: flex-start;
   padding: 22px;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(28,79,145,0.12);
+  border: 1px solid rgba(77,105,177,0.12);
   background: var(--white);
-  box-shadow: 0 14px 30px rgba(15,47,94,0.06);
+  box-shadow: 0 14px 30px rgba(31,46,86,0.06);
 }
 
 .lpa-faculty-promise i {
@@ -2033,7 +2036,7 @@ body:has(.lpa-site),
 .lpa-form-group select:focus {
   outline: none;
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(28,79,145,0.15);
+  box-shadow: 0 0 0 3px rgba(77,105,177,0.15);
   background: var(--white);
 }
 
@@ -2084,7 +2087,7 @@ body:has(.lpa-site),
 }
 
 .lpa-contact-info-card {
-  background: var(--navy);
+  background: var(--royal-dark);
   color: var(--white);
   padding: 40px;
   border-radius: var(--radius-xl);
@@ -2202,7 +2205,7 @@ body:has(.lpa-site),
 
 /* ---------- CTA Banner ---------- */
 .lpa-cta-banner {
-  background: linear-gradient(to right, var(--navy-dark) 0%, var(--navy) 100%);
+  background: linear-gradient(to right, var(--navy-dark) 0%, var(--royal-dark) 100%);
   padding: 80px 0;
   text-align: center;
   position: relative;
@@ -2437,7 +2440,7 @@ body:has(.lpa-site),
 
 .lpa-photo-depth {
   position: relative;
-  filter: drop-shadow(0 22px 34px rgba(15,47,94,0.18));
+  filter: drop-shadow(0 22px 34px rgba(31,46,86,0.18));
 }
 
 .lpa-photo-depth::before {
@@ -2445,7 +2448,7 @@ body:has(.lpa-site),
   position: absolute;
   inset: 18px -16px -18px 24px;
   border-radius: var(--radius-xl);
-  background: rgba(28,79,145,0.12);
+  background: rgba(77,105,177,0.12);
   z-index: -1;
 }
 
@@ -2456,7 +2459,7 @@ body:has(.lpa-site),
   max-width: 340px;
   padding: 16px 18px;
   border-radius: var(--radius-md);
-  background: rgba(15,47,94,0.88);
+  background: rgba(31,46,86,0.88);
   color: var(--white);
   font-size: 0.9rem;
   line-height: 1.55;
@@ -2560,7 +2563,7 @@ body:has(.lpa-site),
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: rgba(28,79,145,0.08);
+  background: rgba(77,105,177,0.08);
 }
 
 .lpa-support-story-content h2 {
@@ -2568,7 +2571,7 @@ body:has(.lpa-site),
 }
 
 .lpa-support-lead {
-  color: #2E3A46;
+  color: #4D4D4D;
   font-size: 1.12rem;
   line-height: 1.85;
 }
@@ -2889,7 +2892,7 @@ body:has(.lpa-site),
 .lpa-contact-form-card .wpforms-form textarea:focus {
   outline: none;
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(28,79,145,0.15);
+  box-shadow: 0 0 0 3px rgba(77,105,177,0.15);
   background: var(--white);
 }
 

@@ -3,33 +3,36 @@
  * LifePoint Academy CSS 01 - Foundation, Header, Hero
  *
  * Variables, reset/base styles, buttons, top bar, navigation, hero, page headers, section subtitles.
- * Source: assets/css/style.css lines 1-589.
+ * Source: assets/css/style.css lines 1-602.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
     ?>
     <style id="lpa-css-01-foundation-header">
 /* ---------- CSS Variables ----------
-   Brand palette per LPA Style Guide:
-   Nautical Blue (Pantone 19-4050 TPX, #1C4F91), White, Black.
-   --gold* tokens are legacy names retained to minimize churn — they now map
-   to neutrals (white/navy) so accents stay on-brand.
+   Brand palette per updated LPA brand colors (school email, July 2026):
+   Royal Blue (CMYK 77/62/0/0, #4D69B1) and Dark Gray (CMYK 0/0/0/70, #4D4D4D),
+   plus White. Supersedes the original style guide's Nautical Blue. Font
+   remains Tahoma per the LPA Style Guide. Darker royal shades are derived
+   for backgrounds so white text keeps WCAG AA contrast.
+   The --navy and --gold token names are legacy, retained to minimize churn.
    ---------------------------------- */
 :root {
-  --navy: #1C4F91;
-  --navy-light: #3A6CAB;
-  --navy-dark: #0F2F5E;
+  --navy: #4D69B1;        /* brand Royal Blue — accents, buttons, headings */
+  --navy-light: #5470B7;  /* hover states */
+  --navy-dark: #1F2E56;   /* deep royal navy — footer, top bar, hero overlay */
+  --royal-dark: #35497F;  /* solid backgrounds behind white body text */
   --gold: #FFFFFF;
   --gold-light: #FFFFFF;
-  --gold-dark: #1C4F91;
+  --gold-dark: #4D69B1;
   --white: #FFFFFF;
   --off-white: #F8F9FA;
   --light-gray: #E9ECEF;
-  --gray: #6C757D;
-  --dark: #000000;
-  --blue-accent: #1C4F91;
+  --gray: #65707A;
+  --dark: #4D4D4D;        /* brand Dark Gray — body text */
+  --blue-accent: #4D69B1;
   --success: #28A745;
-  --red-muted: #D9534F;
+  --red-muted: #C24541;
   --font-heading: Tahoma, Geneva, Verdana, sans-serif;
   --font-body: Tahoma, Geneva, Verdana, sans-serif;
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
@@ -99,7 +102,7 @@ body:has(.lpa-site),
 .lpa-site h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 600; }
 .lpa-site h4 { font-size: 1.25rem; font-weight: 600; }
 
-.lpa-site p { margin-bottom: 1rem; color: #444; }
+.lpa-site p { margin-bottom: 1rem; color: var(--dark); }
 
 .lpa-container {
   max-width: 1200px;
@@ -177,7 +180,7 @@ body:has(.lpa-site),
 .lpa-site .lpa-btn-outline-navy {
   background: var(--white);
   color: var(--navy);
-  border-color: rgba(28,79,145,0.35);
+  border-color: rgba(77,105,177,0.35);
   backdrop-filter: none;
 }
 .lpa-site .lpa-btn-outline-navy:hover {
@@ -480,8 +483,8 @@ body:has(.lpa-site),
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 42% 42%, rgba(28,79,145,0.38) 0%, rgba(28,79,145,0.05) 34%, transparent 58%),
-    linear-gradient(to right, rgba(15,47,94,0.96) 0%, rgba(15,47,94,0.82) 42%, rgba(15,47,94,0.32) 100%);
+    radial-gradient(circle at 42% 42%, rgba(77,105,177,0.38) 0%, rgba(77,105,177,0.05) 34%, transparent 58%),
+    linear-gradient(to right, rgba(31,46,86,0.96) 0%, rgba(31,46,86,0.82) 42%, rgba(31,46,86,0.32) 100%);
 }
 
 .lpa-hero-content {
@@ -542,7 +545,7 @@ body:has(.lpa-site),
 
 /* ---------- Page Header (interior pages) ---------- */
 .lpa-page-header {
-  background: var(--navy);
+  background: var(--royal-dark);
   padding: 80px 0 60px;
   text-align: center;
   position: relative;
