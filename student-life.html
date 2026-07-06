@@ -1,63 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Life | LifePoint Academy</title>
-  <meta name="description" content="Discover student life at LifePoint Academy - aftercare, school calendar, lunch, uniforms, security, and more.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
+<!--
+  WordPress page settings (set as the page's SEO title and meta description when porting):
+  SEO title: Student Life & School Calendar | LifePoint Academy
+  Meta description: See the 2026-2027 LifePoint Academy school calendar plus aftercare, school lunch, uniforms, campus security, and the student handbook.
+-->
+<div class="lpa-site">
+<!-- Top Bar -->
+  <div class="lpa-top-bar">
+    <div class="lpa-container">
+      <div class="lpa-top-bar-left">
         <a href="tel:904-268-2433"><i class="fas fa-phone"></i> 904-268-2433</a>
         <a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope"></i> lifepoint@flcoe.org</a>
       </div>
-      <div class="top-bar-right">
-        <a href="https://factsmgt.com" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> FACTS Login</a>
-        <div class="social-links">
-          <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <div class="lpa-top-bar-right">
+        <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> AECONNECT Login</a>
+        <div class="lpa-social-links">
+          <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <div class="logo-icon"><i class="fas fa-cross"></i></div>
-          <div class="logo-text">
-            <div class="name">LIFE<span>POINT</span></div>
-            <div class="tagline">Academy</div>
-          </div>
-        </a>
-        <button class="menu-toggle" aria-label="Toggle menu">
+  <header class="lpa-site-header">
+    <div class="lpa-container">
+      <nav class="lpa-navbar">
+        <a href="/" class="lpa-logo"><img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-logo-image"></a>
+        <button class="lpa-menu-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">Our School</a>
-            <ul class="dropdown">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+        <ul class="lpa-nav-menu">
+          <li><a href="/">Home</a></li>
+          <li class="lpa-has-dropdown">
+            <a href="/about/" aria-haspopup="true" aria-expanded="false">Our School</a>
+            <ul class="lpa-dropdown">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/faculty/">Faculty &amp; Staff</a></li>
             </ul>
           </li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li class="active">
-            <a href="student-life.html">Student Life</a>
-            <ul class="dropdown">
+          <li><a href="/academics/">Academics</a></li>
+          <li><a href="/admissions/">Admissions</a></li>
+          <li class="lpa-active lpa-has-dropdown">
+            <a href="/student-life/" aria-haspopup="true" aria-expanded="false">Student Life</a>
+            <ul class="lpa-dropdown">
               <li><a href="#aftercare">Aftercare</a></li>
               <li><a href="#calendar">Calendar</a></li>
               <li><a href="#lunch">School Lunch</a></li>
@@ -66,445 +51,469 @@
               <li><a href="#handbook">Student Handbook</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="support.html" class="nav-cta">Support Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/support/" class="lpa-nav-cta">Support Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
+  <section class="lpa-page-header">
+    <div class="lpa-container">
       <h1>Student Life</h1>
-      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Student Life</p>
+      <p class="lpa-breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; Student Life</p>
     </div>
   </section>
 
   <!-- Quick Nav -->
-  <section class="section" style="padding-bottom:0;">
-    <div class="container">
-      <div class="sl-nav">
-        <a href="#aftercare"><i class="fas fa-clock" style="margin-right:6px;"></i> Aftercare</a>
-        <a href="#calendar"><i class="fas fa-calendar-alt" style="margin-right:6px;"></i> Calendar</a>
-        <a href="#lunch"><i class="fas fa-utensils" style="margin-right:6px;"></i> School Lunch</a>
-        <a href="#security"><i class="fas fa-shield-alt" style="margin-right:6px;"></i> Security</a>
-        <a href="#uniforms"><i class="fas fa-tshirt" style="margin-right:6px;"></i> Uniforms</a>
-        <a href="#handbook"><i class="fas fa-book" style="margin-right:6px;"></i> Handbook</a>
+  <section class="lpa-section" style="padding-bottom:0;">
+    <div class="lpa-container">
+      <div class="lpa-sl-nav">
+        <a href="#aftercare"><i class="fas fa-clock"></i> Aftercare</a>
+        <a href="#calendar"><i class="fas fa-calendar-alt"></i> Calendar</a>
+        <a href="#lunch"><i class="fas fa-utensils"></i> School Lunch</a>
+        <a href="#security"><i class="fas fa-shield-alt"></i> Security</a>
+        <a href="#uniforms"><i class="fas fa-tshirt"></i> Uniforms</a>
+        <a href="#handbook"><i class="fas fa-book"></i> Handbook</a>
       </div>
     </div>
   </section>
 
   <!-- Aftercare -->
-  <section id="aftercare" class="section sl-section">
-    <div class="container">
-      <div class="two-col reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80" alt="Students in aftercare">
+  <section id="aftercare" class="lpa-section lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-reveal">
+        <div class="lpa-two-col-image lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/04/LPA-20251204-10.webp" alt="LifePoint Academy aftercare students">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle"><i class="fas fa-clock" style="margin-right:6px;"></i> After School Care</p>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle"><i class="fas fa-clock" style="margin-right:6px;"></i> After School Care</p>
           <h2>Aftercare</h2>
-          <p>Aftercare is provided on a contractual basis and offered for occasional care:</p>
-          <ul style="list-style:none; padding:0;">
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px;"><i class="fas fa-check-circle" style="color:var(--gold);"></i> <strong>Monday&ndash;Thursday:</strong> 3:15&ndash;6:00 p.m.</li>
-            <li style="padding:8px 0; display:flex; align-items:center; gap:10px;"><i class="fas fa-check-circle" style="color:var(--gold);"></i> <strong>Friday:</strong> 1:45&ndash;5:30 p.m.</li>
-          </ul>
+          <p>Aftercare is provided on a contractual basis and is also offered for occasional care when families need additional support after school.</p>
+          <div class="lpa-aftercare-hours">
+            <div>
+              <span>Monday&ndash;Thursday</span>
+              <strong>3:15&ndash;6:00 p.m.</strong>
+            </div>
+            <div>
+              <span>Friday</span>
+              <strong>1:45&ndash;5:30 p.m.</strong>
+            </div>
+          </div>
           <p>Aftercare can be arranged by contacting the school office. Aftercare fees may be found in our Tuition and Fees schedule.</p>
-          <a href="contact.html" class="btn btn-navy" style="margin-top:10px;">Contact the Office</a>
+          <a href="/contact/" class="lpa-btn lpa-btn-navy" style="margin-top:10px;">Contact the Office</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Calendar (Timeline Style) -->
-  <section id="calendar" class="section section-alt sl-section">
-    <div class="container">
-      <div class="section-header">
-        <p class="subtitle"><i class="fas fa-calendar-alt" style="margin-right:6px;"></i> Important Dates</p>
-        <h2>2025&ndash;2026 School Calendar</h2>
-        <div class="divider"></div>
+  <section id="calendar" class="lpa-section lpa-section-alt lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-section-header">
+        <p class="lpa-subtitle"><i class="fas fa-calendar-alt" style="margin-right:6px;"></i> Important Dates</p>
+        <h2>2026&ndash;2027 School Calendar</h2>
+        <div class="lpa-divider"></div>
       </div>
 
-      <div class="calendar-wrapper">
-        <div class="calendar-grid">
+      <div class="lpa-calendar-legend" aria-label="Calendar legend">
+        <span><i class="fas fa-circle lpa-legend-dot lpa-legend-school"></i> School event</span>
+        <span><i class="fas fa-circle lpa-legend-dot lpa-legend-closed"></i> No school</span>
+        <span><i class="fas fa-circle lpa-legend-dot lpa-legend-early"></i> Early dismissal / weather day</span>
+        <span><i class="fas fa-circle lpa-legend-dot lpa-legend-tbd"></i> Date to be determined</span>
+      </div>
+
+      <div class="lpa-calendar-wrapper">
+        <div class="lpa-calendar-grid">
           <!-- August -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> August</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Aug 7</span>
-              <span class="timeline-desc">Family Orientation Night</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 3</span>
+              <span class="lpa-timeline-desc">Teachers Report</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Aug 11</span>
-              <span class="timeline-desc">First Day of School</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 5</span>
+              <span class="lpa-timeline-desc">4TK Cohort Kickoff</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Aug 25&ndash;28</span>
-              <span class="timeline-desc">MAP Assessment #1 - Grades K-8</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 6</span>
+              <span class="lpa-timeline-desc">Family Orientation Night</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Aug 29</span>
-              <span class="timeline-desc no-school">NO SCHOOL - Cohort #1</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 8</span>
+              <span class="lpa-timeline-desc">Teacher Dedication</span>
+            </div>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 10</span>
+              <span class="lpa-timeline-desc">First Day of School</span>
+            </div>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 24&ndash;27</span>
+              <span class="lpa-timeline-desc">MAP Testing</span>
+            </div>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Aug 24&ndash;Sep 3</span>
+              <span class="lpa-timeline-desc">MAP Fluency &mdash; Grades K&ndash;3</span>
             </div>
           </div>
 
           <!-- September -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> September</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Sep 1</span>
-              <span class="timeline-desc no-school">NO SCHOOL - Labor Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Sep 4</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; 4TK Collaborative #1</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Sep 3</span>
-              <span class="timeline-desc">Spirit Day - Favorite Sports Team</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Sep 7</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Labor Day</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Sep 5</span>
-              <span class="timeline-desc">Grandparent's Day Chapel</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Sep 17</span>
+              <span class="lpa-timeline-desc">Picture Day</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Sep 15</span>
-              <span class="timeline-desc">Picture Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Sep 25</span>
+              <span class="lpa-timeline-desc">Latino/Hispanic Chapel</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Sep 26</span>
-              <span class="timeline-desc">Latino/Hispanic Chapel</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Sep 30</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Staff Development</span>
             </div>
           </div>
 
           <!-- October -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> October</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 9&ndash;12</span>
-              <span class="timeline-desc">High School Bible Retreat</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 8</span>
+              <span class="lpa-timeline-desc">End of Quarter 1</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 10</span>
-              <span class="timeline-desc no-school">NO SCHOOL - End of Quarter 1, Cohort #2</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 8&ndash;11</span>
+              <span class="lpa-timeline-desc">High School Bible Retreat</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 12</span>
-              <span class="timeline-desc">Fall Festival 10:00&ndash;2:00</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 9</span>
+              <span class="lpa-timeline-desc">4TK Cohort #2</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 20</span>
-              <span class="timeline-desc no-school">NO SCHOOL / Weather Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 12</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Columbus Day</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 21&ndash;23</span>
-              <span class="timeline-desc">Parent Conferences</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 19&ndash;23</span>
+              <span class="lpa-timeline-desc">Parent Conferences (Oct 19 half day)</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Oct 25</span>
-              <span class="timeline-desc">Education Sabbath - Southpoint SDA Church</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Oct 30</span>
+              <span class="lpa-timeline-desc">Native American Chapel</span>
             </div>
           </div>
 
           <!-- November -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> November</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Nov 7</span>
-              <span class="timeline-desc">Native American Chapel</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">TBD</span>
+              <span class="lpa-timeline-desc lpa-tbd">Week of Prayer</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Nov 10&ndash;14</span>
-              <span class="timeline-desc">Week of Prayer</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Nov 14</span>
-              <span class="timeline-desc">Spirit Day - Bible Character</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Nov 21</span>
-              <span class="timeline-desc early-dismiss">NOON DISMISSAL &ndash; Thanksgiving Program (No Aftercare)</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Nov 24&ndash;28</span>
-              <span class="timeline-desc no-school">NO SCHOOL / Thanksgiving Break</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Nov 23&ndash;27</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Thanksgiving Vacation</span>
             </div>
           </div>
 
           <!-- December -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> December</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 1</span>
-              <span class="timeline-desc">School Resumes</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Dec 16</span>
+              <span class="lpa-timeline-desc">Christmas Program Setup</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 17</span>
-              <span class="timeline-desc">Christmas Program @ 7 pm</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Dec 17</span>
+              <span class="lpa-timeline-desc">Christmas Program</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 19</span>
-              <span class="timeline-desc">Spirit Day - Winter Wonderland Pajama Party</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Dec 18</span>
+              <span class="lpa-timeline-desc lpa-early-dismiss">NOON DISMISSAL &ndash; End of Q2 / First Semester</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 19</span>
-              <span class="timeline-desc early-dismiss">NOON DISMISSAL &ndash; End of 2nd Quarter (No Aftercare)</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Dec 24&ndash;Jan 4</span>
-              <span class="timeline-desc no-school">NO SCHOOL &ndash; Christmas/New Year's Vacation</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Dec 21&ndash;Jan 3</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Christmas Vacation</span>
             </div>
           </div>
 
           <!-- January -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> January</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 5</span>
-              <span class="timeline-desc">School Resumes - Second Semester Begins</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 4</span>
+              <span class="lpa-timeline-desc">School Resumes &ndash; Second Semester Begins</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 9</span>
-              <span class="timeline-desc">Spirit Day - Favorite Character</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 15</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; 4TK Collaborative #3</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 12&ndash;15</span>
-              <span class="timeline-desc">Parent Conferences</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 18</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Martin Luther King Jr. Day / Weather Day</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 16</span>
-              <span class="timeline-desc no-school">NO SCHOOL &ndash; Cohort #3</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 19&ndash;22</span>
+              <span class="lpa-timeline-desc">MAP Testing</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 19</span>
-              <span class="timeline-desc no-school">NO SCHOOL &ndash; Martin Luther King Jr. Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 19&ndash;29</span>
+              <span class="lpa-timeline-desc">MAP Fluency</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 20&ndash;23</span>
-              <span class="timeline-desc">MAP Assessment #2 - Grades K-8</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 26</span>
-              <span class="timeline-desc">Kindergarten Round-Up</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Jan 31</span>
-              <span class="timeline-desc">Education Sabbath - Jacksonville First SDA Church</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Jan 25</span>
+              <span class="lpa-timeline-desc">Kindergarten Round-Up</span>
             </div>
           </div>
 
           <!-- February -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> February</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 2&ndash;4</span>
-              <span class="timeline-desc">WrAP Testing (Writing Assessment Program) Grades 3-8</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 3</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Staff Development</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 5</span>
-              <span class="timeline-desc">Spirit Day - Red/Pink Heart Awareness</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 8&ndash;10</span>
+              <span class="lpa-timeline-desc">WRAP Testing</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 13</span>
-              <span class="timeline-desc no-school">NO SCHOOL - Cohort #4</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 12</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; 4TK Collaborative #4</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 16</span>
-              <span class="timeline-desc no-school">NO SCHOOL - Presidents' Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 15</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Presidents' Day / Weather Day</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 17&ndash;20</span>
-              <span class="timeline-desc">Outdoor Education - Grades 5-6</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 16&ndash;19 or Feb 22&ndash;25</span>
+              <span class="lpa-timeline-desc">Outdoor Education</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Feb 27</span>
-              <span class="timeline-desc">African American Celebration Chapel</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Feb 26</span>
+              <span class="lpa-timeline-desc">African American Chapel</span>
             </div>
           </div>
 
           <!-- March -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> March</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 4&ndash;7</span>
-              <span class="timeline-desc">Festival of the Arts @ Forest Lake Academy - Grades 6-10</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 3&ndash;6</span>
+              <span class="lpa-timeline-desc">Festival of the Arts &mdash; Grades 6&ndash;10</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 13</span>
-              <span class="timeline-desc">Spirit Day - Twin Day</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 12</span>
+              <span class="lpa-timeline-desc">End of 3rd Quarter</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 13</span>
-              <span class="timeline-desc early-dismiss">NOON DISMISSAL - End of 3rd Quarter (No Aftercare)</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 15&ndash;19</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Spring Break</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 16&ndash;20</span>
-              <span class="timeline-desc no-school">NO SCHOOL &ndash; Spring Break</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 22&ndash;25</span>
+              <span class="lpa-timeline-desc">Week of Prayer</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 30</span>
-              <span class="timeline-desc early-dismiss">NOON DISMISSAL</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 26</span>
+              <span class="lpa-timeline-desc lpa-no-school">NO SCHOOL &ndash; Easter Break</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Mar 30&ndash;Apr 2</span>
-              <span class="timeline-desc">Parent-Teacher Conferences</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Mar 29&ndash;Apr 2</span>
+              <span class="lpa-timeline-desc">Parent Conferences (Mar 29 noon dismissal)</span>
             </div>
           </div>
 
           <!-- April -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> April</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 1&ndash;15</span>
-              <span class="timeline-desc">Johns Hopkins Culture 360 Survey</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Apr 1&ndash;15</span>
+              <span class="lpa-timeline-desc">Johns Hopkins Survey</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 3</span>
-              <span class="timeline-desc no-school">NO SCHOOL - Easter Break</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Apr 8</span>
+              <span class="lpa-timeline-desc">4TK Cohort Check-In (After School)</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 17</span>
-              <span class="timeline-desc">Spirit Day - 1980's</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Apr 19&ndash;23</span>
+              <span class="lpa-timeline-desc">MAP Testing</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 20&ndash;24</span>
-              <span class="timeline-desc">MAP Assessment #3 - Grades 3-8</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Apr 19&ndash;30</span>
+              <span class="lpa-timeline-desc">MAP Fluency</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">Apr 27&ndash;May 1</span>
-              <span class="timeline-desc">Study Tour - Grades 7-8</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">Apr 30</span>
+              <span class="lpa-timeline-desc">Asian/Pacific Islander Heritage Chapel</span>
             </div>
           </div>
 
           <!-- May -->
-          <div class="calendar-month reveal">
+          <div class="lpa-calendar-month lpa-reveal">
             <h3><i class="fas fa-calendar"></i> May</h3>
-            <div class="timeline-item">
-              <span class="timeline-date">May 1</span>
-              <span class="timeline-desc">Asian/Pacific Islander Heritage Chapel</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 13</span>
+              <span class="lpa-timeline-desc">VPK Graduation Setup (After School)</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 4&ndash;8</span>
-              <span class="timeline-desc">Teacher Appreciation Week</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 14</span>
+              <span class="lpa-timeline-desc">VPK Graduation @ 8:15 am</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 6&ndash;7</span>
-              <span class="timeline-desc">8th Grade Class Trip</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 19</span>
+              <span class="lpa-timeline-desc">Graduation Setup (After School)</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 15</span>
-              <span class="timeline-desc">VPK Graduation @ 8:15&ndash;9:00 am</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 20</span>
+              <span class="lpa-timeline-desc">Kindergarten Graduation</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 21</span>
-              <span class="timeline-desc">Kindergarten Graduation @ 10:00 am</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 20</span>
+              <span class="lpa-timeline-desc">8th Grade Graduation</span>
             </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 21</span>
-              <span class="timeline-desc">8th Grade Graduation @ 2:00 pm</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">May 22</span>
-              <span class="timeline-desc early-dismiss">NOON DISMISSAL &ndash; Last Day of School (No Aftercare)</span>
+            <div class="lpa-timeline-item">
+              <span class="lpa-timeline-date">May 21</span>
+              <span class="lpa-timeline-desc lpa-early-dismiss">Last Day of School</span>
             </div>
           </div>
         </div>
       </div>
 
-      <p class="text-center" style="margin-top:20px; font-style:italic; color:var(--gray);">Dates are subject to change.</p>
+      <p class="lpa-text-center" style="margin-top:20px; font-style:italic; color:var(--gray);">Dates are subject to change.</p>
     </div>
   </section>
 
   <!-- Lunch -->
-  <section id="lunch" class="section sl-section">
-    <div class="container">
-      <div class="two-col reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="School lunch">
+  <section id="lunch" class="lpa-section lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-reveal">
+        <div class="lpa-two-col-image lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/04/School-Lunch-scaled.jpg" alt="Vegetarian school lunch">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle"><i class="fas fa-utensils" style="margin-right:6px;"></i> Nourishing Meals</p>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle"><i class="fas fa-utensils" style="margin-right:6px;"></i> Nourishing Meals</p>
           <h2>School Lunch</h2>
-          <p>A vegetarian lunch is available Monday through Friday provided by <strong>Faith &amp; Love Kitchen</strong> (Tayna Boria, School Lunch Provider).</p>
-          <a href="#" class="btn btn-navy" style="margin-top:10px;">Order Lunch Online</a>
+          <p>Vegetarian lunches are available Monday through Friday through <strong>Faith &amp; Love Kitchen</strong>, providing families with a convenient meal option prepared with care for the school day.</p>
+          <div class="lpa-lunch-provider">
+            <div class="lpa-lunch-provider-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <h3>Prepared by Faith &amp; Love Kitchen</h3>
+              <p>Tayna Boria, School Lunch Provider</p>
+            </div>
+          </div>
+          <div class="lpa-lunch-highlights">
+            <span><i class="fas fa-leaf"></i> Vegetarian</span>
+            <span><i class="fas fa-calendar-week"></i> Monday&ndash;Friday</span>
+          </div>
+          <a href="https://www.whatsapp.com/catalog/19045157236/?app_absent=0" target="_blank" rel="noopener" class="lpa-btn lpa-btn-navy" style="margin-top:10px;">Order Lunch Online</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Security -->
-  <section id="security" class="section section-alt sl-section">
-    <div class="container">
-      <div class="two-col reverse reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80" alt="Safe school campus">
+  <section id="security" class="lpa-section lpa-section-alt lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-reverse lpa-reveal">
+        <div class="lpa-two-col-image lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/04/School-Security.png" alt="LifePoint Academy classroom monitored for safety">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle"><i class="fas fa-shield-alt" style="margin-right:6px;"></i> Your Child's Safety</p>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle"><i class="fas fa-shield-alt" style="margin-right:6px;"></i> Your Child's Safety</p>
           <h2>School Security</h2>
           <p>The LifePoint Academy campus is monitored with security cameras through a security company. Visitors and parents are expected to sign in and wear a name tag at all times. They are allowed into the classroom area only when being accompanied by a teacher or staff member.</p>
-          <p>Any person interacting with students is required to go through an extensive background check. Students are supervised at all times in class, on the playground, at lunch, and in aftercare.</p>
-          <p>LifePoint Academy encourages frequent hand washing and has sanitizing stations in each classroom and in other areas of the school. The school is regularly cleaned by a contracted cleaning service.</p>
+          <div class="lpa-security-points">
+            <div><i class="fas fa-id-badge"></i><span>Visitor sign-in and name tags are required.</span></div>
+            <div><i class="fas fa-user-shield"></i><span>Adults interacting with students complete background checks.</span></div>
+            <div><i class="fas fa-eye"></i><span>Students are supervised in class, lunch, playground, and aftercare.</span></div>
+          </div>
+          <p>LifePoint Academy also encourages frequent hand washing, provides sanitizing stations in classrooms and other areas of the school, and is regularly cleaned by a contracted cleaning service.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Uniforms -->
-  <section id="uniforms" class="section sl-section">
-    <div class="container text-center">
-      <div class="section-header">
-        <p class="subtitle"><i class="fas fa-tshirt" style="margin-right:6px;"></i> Dress Code</p>
-        <h2>School Uniforms</h2>
-        <div class="divider"></div>
-        <p>LifePoint Academy students wear uniforms to school unless otherwise specified. Uniforms can be purchased from <strong>French Toast</strong>.</p>
+  <section id="uniforms" class="lpa-section lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-uniforms-feature lpa-reveal">
+        <div class="lpa-uniforms-content">
+          <p class="lpa-subtitle"><i class="fas fa-tshirt" style="margin-right:6px;"></i> Dress Code</p>
+          <h2>School Uniforms</h2>
+          <p>LifePoint Academy students wear uniforms to school unless otherwise specified. Uniforms can be purchased from <strong>RC Uniforms</strong>.</p>
+          <a href="https://rcuniforms.com/collections/lifepoint-academy" class="lpa-btn lpa-btn-navy" target="_blank" rel="noopener"><i class="fas fa-shopping-cart" style="margin-right:8px;"></i> Shop Uniforms at RC Uniforms</a>
+        </div>
+        <div class="lpa-uniforms-photo lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/04/LPA-20251204-04.webp" alt="LifePoint Academy student in school uniform">
+        </div>
       </div>
-      <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart" style="margin-right:8px;"></i> Shop Uniforms at French Toast</a>
     </div>
   </section>
 
   <!-- Handbook -->
-  <section id="handbook" class="section section-alt sl-section">
-    <div class="container text-center">
-      <div class="section-header">
-        <p class="subtitle"><i class="fas fa-book" style="margin-right:6px;"></i> School Policies</p>
-        <h2>Student Handbook</h2>
-        <div class="divider"></div>
-        <p>The student handbook contains all the policies, procedures, and guidelines for students and families at LifePoint Academy.</p>
+  <section id="handbook" class="lpa-section lpa-section-alt lpa-sl-section">
+    <div class="lpa-container">
+      <div class="lpa-handbook-panel lpa-reveal">
+        <div class="lpa-handbook-icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <div class="lpa-handbook-content">
+          <p class="lpa-subtitle"><i class="fas fa-book" style="margin-right:6px;"></i> School Policies</p>
+          <h2>Student Handbook</h2>
+          <p>The student handbook contains the policies, procedures, and family guidelines for LifePoint Academy. Families can review expectations, routines, and school procedures in one place.</p>
+          <div class="lpa-handbook-meta">
+            <span><i class="fas fa-file-pdf"></i> PDF resource</span>
+            <span><i class="fas fa-calendar"></i> 2024&ndash;2025 handbook</span>
+          </div>
+        </div>
+        <div class="lpa-handbook-action">
+          <a href="/wp-content/uploads/2026/04/LPA-2024-2025-Student-Handbook.pdf" class="lpa-btn lpa-btn-navy" target="_blank" rel="noopener"><i class="fas fa-download" style="margin-right:8px;"></i> Download Student Handbook</a>
+        </div>
       </div>
-      <a href="#" class="btn btn-navy"><i class="fas fa-download" style="margin-right:8px;"></i> Download Student Handbook (2024&ndash;2025)</a>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container">
+  <section class="lpa-cta-banner">
+    <div class="lpa-container">
       <h2>Experience the LifePoint Difference</h2>
       <p>See firsthand why families love LifePoint Academy. Schedule your campus visit today.</p>
-      <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+      <a href="/contact/" class="lpa-btn lpa-btn-primary">Schedule a Tour</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <div class="logo-text">
-            <div class="name">LIFE<span style="color:#888;">POINT</span> Academy</div>
-          </div>
+  <footer class="lpa-site-footer">
+    <div class="lpa-container">
+      <div class="lpa-footer-grid">
+        <div class="lpa-footer-about">
+          <img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-footer-logo-image">
           <p>A Pre-K through 10th grade Christian school in Jacksonville, FL, offering 100+ years of Adventist educational excellence.</p>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="support.html">Support Us</a></li>
+          <ul class="lpa-footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/academics/">Academics</a></li>
+            <li><a href="/admissions/">Admissions</a></li>
+            <li><a href="/student-life/">Student Life</a></li>
+            <li><a href="/support/">Support Us</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Student Life</h4>
-          <ul class="footer-links">
+          <ul class="lpa-footer-links">
             <li><a href="#aftercare">Aftercare</a></li>
             <li><a href="#calendar">Calendar</a></li>
             <li><a href="#lunch">School Lunch</a></li>
@@ -512,32 +521,29 @@
             <li><a href="#handbook">Handbook</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Contact</h4>
-          <ul class="footer-links">
+          <ul class="lpa-footer-links">
             <li><i class="fas fa-map-marker-alt" style="margin-right:6px; color:var(--gold);"></i> 4298 Livingston Road<br>Jacksonville, FL 32257</li>
             <li><a href="tel:904-268-2433"><i class="fas fa-phone" style="margin-right:6px; color:var(--gold);"></i> 904-268-2433</a></li>
             <li><a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope" style="margin-right:6px; color:var(--gold);"></i> lifepoint@flcoe.org</a></li>
           </ul>
-          <div class="social-links" style="margin-top:16px;">
-            <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <div class="lpa-social-links" style="margin-top:16px;">
+            <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="non-discrimination">
-      <div class="container">
+    <div class="lpa-non-discrimination">
+      <div class="lpa-container">
         The Florida Conference of Seventh-day Adventist schools admits students of any race, color, ethnicity, national origin, gender, and sexual orientation. Our schools do not discriminate on the basis of any of the aforementioned categories in decisions for admission, discipline, or application of education policies.
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://factsmgt.com" target="_blank" rel="noopener">FACTS Login</a>
+    <div class="lpa-footer-bottom">
+      <div class="lpa-container">
+        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener">AECONNECT Login</a>
       </div>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+</div>

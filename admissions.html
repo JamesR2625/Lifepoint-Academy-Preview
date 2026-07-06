@@ -1,90 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admissions | LifePoint Academy</title>
-  <meta name="description" content="Apply to LifePoint Academy for the 2026-2027 school year. Learn about our admissions process, tuition, and scholarships including Step Up for Students.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
+<!--
+  WordPress page settings (set as the page's SEO title and meta description when porting):
+  SEO title: Admissions & Tuition | LifePoint Academy
+  Meta description: Apply to LifePoint Academy for 2026-2027. See admission steps, tuition and fees, and scholarship options including Step Up for Students and FES.
+-->
+<div class="lpa-site">
+<!-- Top Bar -->
+  <div class="lpa-top-bar">
+    <div class="lpa-container">
+      <div class="lpa-top-bar-left">
         <a href="tel:904-268-2433"><i class="fas fa-phone"></i> 904-268-2433</a>
         <a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope"></i> lifepoint@flcoe.org</a>
       </div>
-      <div class="top-bar-right">
-        <a href="https://factsmgt.com" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> FACTS Login</a>
-        <div class="social-links">
-          <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <div class="lpa-top-bar-right">
+        <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> AECONNECT Login</a>
+        <div class="lpa-social-links">
+          <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <div class="logo-icon"><i class="fas fa-cross"></i></div>
-          <div class="logo-text">
-            <div class="name">LIFE<span>POINT</span></div>
-            <div class="tagline">Academy</div>
-          </div>
-        </a>
-        <button class="menu-toggle" aria-label="Toggle menu">
+  <header class="lpa-site-header">
+    <div class="lpa-container">
+      <nav class="lpa-navbar">
+        <a href="/" class="lpa-logo"><img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-logo-image"></a>
+        <button class="lpa-menu-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">Our School</a>
-            <ul class="dropdown">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+        <ul class="lpa-nav-menu">
+          <li><a href="/">Home</a></li>
+          <li class="lpa-has-dropdown">
+            <a href="/about/" aria-haspopup="true" aria-expanded="false">Our School</a>
+            <ul class="lpa-dropdown">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/faculty/">Faculty &amp; Staff</a></li>
             </ul>
           </li>
-          <li><a href="academics.html">Academics</a></li>
-          <li class="active"><a href="admissions.html">Admissions</a></li>
-          <li>
-            <a href="student-life.html">Student Life</a>
-            <ul class="dropdown">
-              <li><a href="student-life.html#aftercare">Aftercare</a></li>
-              <li><a href="student-life.html#calendar">Calendar</a></li>
-              <li><a href="student-life.html#lunch">School Lunch</a></li>
-              <li><a href="student-life.html#security">School Security</a></li>
-              <li><a href="student-life.html#uniforms">School Uniforms</a></li>
-              <li><a href="student-life.html#handbook">Student Handbook</a></li>
+          <li><a href="/academics/">Academics</a></li>
+          <li class="lpa-active"><a href="/admissions/">Admissions</a></li>
+          <li class="lpa-has-dropdown">
+            <a href="/student-life/" aria-haspopup="true" aria-expanded="false">Student Life</a>
+            <ul class="lpa-dropdown">
+              <li><a href="/student-life/#aftercare">Aftercare</a></li>
+              <li><a href="/student-life/#calendar">Calendar</a></li>
+              <li><a href="/student-life/#lunch">School Lunch</a></li>
+              <li><a href="/student-life/#security">School Security</a></li>
+              <li><a href="/student-life/#uniforms">School Uniforms</a></li>
+              <li><a href="/student-life/#handbook">Student Handbook</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="support.html" class="nav-cta">Support Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/support/" class="lpa-nav-cta">Support Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
+  <section class="lpa-page-header">
+    <div class="lpa-container">
       <h1>Admissions</h1>
-      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Admissions</p>
+      <p class="lpa-breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; Admissions</p>
     </div>
   </section>
 
   <!-- Enrollment Banner -->
-  <section class="section" style="background: linear-gradient(135deg, var(--off-white) 0%, #e8e3d8 100%);">
-    <div class="container text-center">
-      <div class="hero-badge" style="background:rgba(27,42,74,0.1); border-color:rgba(27,42,74,0.2); color:var(--navy); margin-bottom:16px; display:inline-flex;">
+  <section class="lpa-section" style="background: linear-gradient(135deg, var(--off-white) 0%, #e8e3d8 100%);">
+    <div class="lpa-container lpa-text-center">
+      <div class="lpa-hero-badge" style="background:rgba(27,42,74,0.1); border-color:rgba(27,42,74,0.2); color:var(--navy); margin-bottom:16px; display:inline-flex;">
         <i class="fas fa-star"></i> Now Enrolling
       </div>
       <h2>Enrollment for the 2026&ndash;2027 School Year</h2>
@@ -93,145 +78,140 @@
   </section>
 
   <!-- Steps -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <p class="subtitle">How to Apply</p>
+  <section class="lpa-section">
+    <div class="lpa-container">
+      <div class="lpa-section-header">
+        <p class="lpa-subtitle">How to Apply</p>
         <h2>Application Process</h2>
-        <div class="divider"></div>
+        <div class="lpa-divider"></div>
         <p>Follow the steps below to complete the application process. All student applications will be reviewed by the Admissions Committee for acceptance.</p>
       </div>
 
-      <div class="steps-grid">
-        <div class="step-card reveal">
-          <div class="step-number">1</div>
+      <div class="lpa-steps-grid">
+        <div class="lpa-step-card lpa-reveal">
+          <div class="lpa-step-number">1</div>
           <h3>Complete the Online Application</h3>
           <p>Follow the steps in our online application portal to begin your enrollment process. You'll provide student information, family details, and previous school records.</p>
-          <a href="#" class="step-link">Start Application <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+          <a href="https://connect.adventisteducation.org/inquiry/c6db266f998eac25efa5f0bb6a7947d0?language=en" target="_blank" rel="noopener" class="lpa-step-link">Start Application <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
         </div>
-        <div class="step-card reveal">
-          <div class="step-number">2</div>
+        <div class="lpa-step-card lpa-reveal">
+          <div class="lpa-step-number">2</div>
           <h3>Submit Your Checklist</h3>
           <p>Complete and submit the required documentation checklist, including immunization records, birth certificate, and previous report cards.</p>
-          <a href="#" class="step-link">View Checklist <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+          <a href="/wp-content/uploads/2026/06/LPA-Admissions-Checklist.pdf" target="_blank" rel="noopener" class="lpa-step-link">View Checklist <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
         </div>
-        <div class="step-card reveal">
-          <div class="step-number">3</div>
+        <div class="lpa-step-card lpa-reveal">
+          <div class="lpa-step-number">3</div>
           <h3>Complete Recommendation Form</h3>
           <p>Have a teacher or school administrator complete the recommendation form on behalf of your student.</p>
-          <a href="#" class="step-link">Recommendation Form <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+          <a href="/wp-content/uploads/2026/06/LPA-Recommendation-Form.pdf" target="_blank" rel="noopener" class="lpa-step-link">Recommendation Form <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
         </div>
       </div>
 
-      <div class="info-callout" style="margin-top:40px;">
+      <div class="lpa-info-callout" style="margin-top:40px;">
         <i class="fas fa-info-circle"></i>
-        <p>We shall process your admission and update you with our final decision within <strong>60 days</strong> of receiving payment and all documentation.</p>
+        <p>We will review your application and provide a decision within <strong>60 days</strong> after payment and all required documentation are received.</p>
       </div>
     </div>
   </section>
 
   <!-- Tuition -->
-  <section class="section section-alt">
-    <div class="container text-center">
-      <div class="section-header">
-        <p class="subtitle">Financial Information</p>
+  <section class="lpa-section lpa-section-alt">
+    <div class="lpa-container lpa-text-center">
+      <div class="lpa-section-header">
+        <p class="lpa-subtitle">Financial Information</p>
         <h2>Tuition &amp; Fees</h2>
-        <div class="divider"></div>
+        <div class="lpa-divider"></div>
         <p>We believe quality Christian education should be accessible. LifePoint Academy accepts Step Up for Students and FES Scholarships to make enrollment affordable for every family.</p>
       </div>
       <div style="display:flex; gap:24px; justify-content:center; flex-wrap:wrap; margin-top:20px;">
-        <a href="#" class="btn btn-primary"><i class="fas fa-file-alt" style="margin-right:8px;"></i> View Tuition &amp; Fees</a>
-        <a href="contact.html" class="btn btn-navy"><i class="fas fa-phone" style="margin-right:8px;"></i> Contact Us for Details</a>
+        <a href="/wp-content/uploads/2026/06/LPA-Tuition-and-Fees-2026-2027.pdf" target="_blank" rel="noopener" class="lpa-btn lpa-btn-navy"><i class="fas fa-file-alt" style="margin-right:8px;"></i> View Tuition &amp; Fees</a>
+        <a href="/contact/" class="lpa-btn lpa-btn-navy"><i class="fas fa-phone" style="margin-right:8px;"></i> Contact Us for Details</a>
       </div>
     </div>
   </section>
 
   <!-- VPK -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1587654780291-39c9404d7dd0?w=800&q=80" alt="VPK students at LifePoint Academy">
+  <section class="lpa-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-reveal">
+        <div class="lpa-two-col-image">
+          <img src="/wp-content/uploads/2026/04/LPA-Pix-Jan-2022-03-scaled.webp" alt="LifePoint Academy VPK classroom">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle">Early Childhood</p>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle">Early Childhood</p>
           <h2>VPK Program</h2>
           <p>Our VPK program is ranked <strong>#2 in Duval County</strong> and holds the <strong>Gold Seal</strong> accreditation. We are now enrolling VPK students for 2026&ndash;2027.</p>
           <p>Give your child the best start in a nurturing, Christ-centered environment that prepares them for academic success.</p>
-          <a href="#" class="btn btn-navy">Register for VPK</a>
+          <a href="https://lifepointacademyvpk.my.canva.site/" target="_blank" rel="noopener" class="lpa-btn lpa-btn-navy">Register for VPK</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container">
+  <section class="lpa-cta-banner">
+    <div class="lpa-container">
       <h2>Questions About Enrollment?</h2>
       <p>Our admissions team is here to help. Call us or schedule a campus tour today.</p>
       <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-        <a href="tel:904-268-2433" class="btn btn-primary"><i class="fas fa-phone" style="margin-right:8px;"></i> Call 904-268-2433</a>
-        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        <a href="tel:904-268-2433" class="lpa-btn lpa-btn-primary"><i class="fas fa-phone" style="margin-right:8px;"></i> Call 904-268-2433</a>
+        <a href="/contact/" class="lpa-btn lpa-btn-outline">Contact Us</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <div class="logo-text">
-            <div class="name">LIFE<span style="color:#888;">POINT</span> Academy</div>
-          </div>
+  <footer class="lpa-site-footer">
+    <div class="lpa-container">
+      <div class="lpa-footer-grid">
+        <div class="lpa-footer-about">
+          <img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-footer-logo-image">
           <p>A Pre-K through 10th grade Christian school in Jacksonville, FL, offering 100+ years of Adventist educational excellence.</p>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="support.html">Support Us</a></li>
+          <ul class="lpa-footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/academics/">Academics</a></li>
+            <li><a href="/admissions/">Admissions</a></li>
+            <li><a href="/student-life/">Student Life</a></li>
+            <li><a href="/support/">Support Us</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Student Life</h4>
-          <ul class="footer-links">
-            <li><a href="student-life.html#aftercare">Aftercare</a></li>
-            <li><a href="student-life.html#calendar">Calendar</a></li>
-            <li><a href="student-life.html#lunch">School Lunch</a></li>
-            <li><a href="student-life.html#uniforms">Uniforms</a></li>
-            <li><a href="student-life.html#handbook">Handbook</a></li>
+          <ul class="lpa-footer-links">
+            <li><a href="/student-life/#aftercare">Aftercare</a></li>
+            <li><a href="/student-life/#calendar">Calendar</a></li>
+            <li><a href="/student-life/#lunch">School Lunch</a></li>
+            <li><a href="/student-life/#uniforms">Uniforms</a></li>
+            <li><a href="/student-life/#handbook">Handbook</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Contact</h4>
-          <ul class="footer-links">
+          <ul class="lpa-footer-links">
             <li><i class="fas fa-map-marker-alt" style="margin-right:6px; color:var(--gold);"></i> 4298 Livingston Road<br>Jacksonville, FL 32257</li>
             <li><a href="tel:904-268-2433"><i class="fas fa-phone" style="margin-right:6px; color:var(--gold);"></i> 904-268-2433</a></li>
             <li><a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope" style="margin-right:6px; color:var(--gold);"></i> lifepoint@flcoe.org</a></li>
           </ul>
-          <div class="social-links" style="margin-top:16px;">
-            <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <div class="lpa-social-links" style="margin-top:16px;">
+            <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="non-discrimination">
-      <div class="container">
+    <div class="lpa-non-discrimination">
+      <div class="lpa-container">
         The Florida Conference of Seventh-day Adventist schools admits students of any race, color, ethnicity, national origin, gender, and sexual orientation. Our schools do not discriminate on the basis of any of the aforementioned categories in decisions for admission, discipline, or application of education policies.
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://factsmgt.com" target="_blank" rel="noopener">FACTS Login</a>
+    <div class="lpa-footer-bottom">
+      <div class="lpa-container">
+        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener">AECONNECT Login</a>
       </div>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+</div>

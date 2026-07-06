@@ -1,116 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LifePoint Academy | Christian School in Jacksonville, FL</title>
-  <meta name="description" content="LifePoint Academy is a Pre-K through 10th grade Christian school in Jacksonville, FL offering academic excellence in a Christ-centered environment. Now enrolling for 2026-2027.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
+<!--
+  WordPress page settings (set as the page's SEO title and meta description when porting):
+  SEO title: LifePoint Academy | Private Christian School in Jacksonville, FL
+  Meta description: A Pre-K-10 Seventh-day Adventist Christian school in Jacksonville, FL offering Christ-centered academics, small classes, and 100+ years of heritage.
+-->
+<div class="lpa-site">
+<!-- Top Bar -->
+  <div class="lpa-top-bar">
+    <div class="lpa-container">
+      <div class="lpa-top-bar-left">
         <a href="tel:904-268-2433"><i class="fas fa-phone"></i> 904-268-2433</a>
         <a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope"></i> lifepoint@flcoe.org</a>
       </div>
-      <div class="top-bar-right">
-        <a href="https://factsmgt.com" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> FACTS Login</a>
-        <div class="social-links">
-          <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <div class="lpa-top-bar-right">
+        <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> AECONNECT Login</a>
+        <div class="lpa-social-links">
+          <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <div class="logo-icon"><i class="fas fa-cross"></i></div>
-          <div class="logo-text">
-            <div class="name">LIFE<span>POINT</span></div>
-            <div class="tagline">Academy</div>
-          </div>
-        </a>
-        <button class="menu-toggle" aria-label="Toggle menu">
+  <header class="lpa-site-header">
+    <div class="lpa-container">
+      <nav class="lpa-navbar">
+        <a href="/" class="lpa-logo"><img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-logo-image"></a>
+        <button class="lpa-menu-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-menu">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">Our School</a>
-            <ul class="dropdown">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+        <ul class="lpa-nav-menu">
+          <li class="lpa-active"><a href="/">Home</a></li>
+          <li class="lpa-has-dropdown">
+            <a href="/about/" aria-haspopup="true" aria-expanded="false">Our School</a>
+            <ul class="lpa-dropdown">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/faculty/">Faculty &amp; Staff</a></li>
             </ul>
           </li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li>
-            <a href="student-life.html">Student Life</a>
-            <ul class="dropdown">
-              <li><a href="student-life.html#aftercare">Aftercare</a></li>
-              <li><a href="student-life.html#calendar">Calendar</a></li>
-              <li><a href="student-life.html#lunch">School Lunch</a></li>
-              <li><a href="student-life.html#security">School Security</a></li>
-              <li><a href="student-life.html#uniforms">School Uniforms</a></li>
-              <li><a href="student-life.html#handbook">Student Handbook</a></li>
+          <li><a href="/academics/">Academics</a></li>
+          <li><a href="/admissions/">Admissions</a></li>
+          <li class="lpa-has-dropdown">
+            <a href="/student-life/" aria-haspopup="true" aria-expanded="false">Student Life</a>
+            <ul class="lpa-dropdown">
+              <li><a href="/student-life/#aftercare">Aftercare</a></li>
+              <li><a href="/student-life/#calendar">Calendar</a></li>
+              <li><a href="/student-life/#lunch">School Lunch</a></li>
+              <li><a href="/student-life/#security">School Security</a></li>
+              <li><a href="/student-life/#uniforms">School Uniforms</a></li>
+              <li><a href="/student-life/#handbook">Student Handbook</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="support.html" class="nav-cta">Support Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/support/" class="lpa-nav-cta">Support Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80');"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
+  <section class="lpa-hero">
+    <div class="lpa-hero-bg" style="background-image: url('/wp-content/uploads/2026/04/LPA-Pix-Jan-2022-19-scaled.webp');"></div>
+    <div class="lpa-container">
+      <div class="lpa-hero-content">
+        <h1>Faith-Driven Education, <em>Exceptional Growth</em></h1>
+        <p>At LifePoint Academy, we nurture the whole child&mdash;spiritually, academically, and socially&mdash;in a Christ-centered community where every student is known, loved, and challenged to excel.</p>
+        <div class="lpa-hero-badge">
           <i class="fas fa-star"></i> Now Enrolling Pre-K&ndash;10th Grade for 2026&ndash;2027
         </div>
-        <h1>Faith-Driven Education, <em>Exceptional Results</em></h1>
-        <p>At LifePoint Academy, we nurture the whole child&mdash;spiritually, academically, and socially&mdash;in a Christ-centered community where every student is known, loved, and challenged to excel.</p>
-        <div class="hero-buttons">
-          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
-          <a href="about.html" class="btn btn-outline">Discover Our School</a>
+        <div class="lpa-hero-buttons">
+          <a href="/admissions/" class="lpa-btn lpa-btn-primary">Apply Now</a>
+          <a href="/about/" class="lpa-btn lpa-btn-outline">Discover Our School</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Stats (Floating Bar) -->
-  <section class="section" style="padding-bottom:40px;">
-    <div class="container">
-      <div class="stats-bar reveal">
-        <div class="stats-row">
-          <div class="stat-item">
-            <div class="stat-number">100+</div>
-            <div class="stat-label">Years of Excellence</div>
+  <section class="lpa-section" style="padding-bottom:40px;">
+    <div class="lpa-container">
+      <div class="lpa-stats-bar lpa-reveal">
+        <div class="lpa-stats-row">
+          <div class="lpa-stat-item">
+            <div class="lpa-stat-number">100+</div>
+            <div class="lpa-stat-label">Years of Excellence</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">Pre-K&ndash;10</div>
-            <div class="stat-label">Grade Levels</div>
+          <div class="lpa-stat-item">
+            <div class="lpa-stat-number">Pre-K&ndash;10</div>
+            <div class="lpa-stat-label">Grade Levels</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">#2</div>
-            <div class="stat-label">VPK in Duval County</div>
+          <div class="lpa-stat-item">
+            <div class="lpa-stat-number">#2</div>
+            <div class="lpa-stat-label">VPK in Duval County</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">Top 3</div>
-            <div class="stat-label">Math Scores in FL Conference</div>
+          <div class="lpa-stat-item">
+            <div class="lpa-stat-number">Top 3</div>
+            <div class="lpa-stat-label">Math Scores in FL Conference</div>
           </div>
         </div>
       </div>
@@ -118,201 +103,192 @@
   </section>
 
   <!-- Welcome -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col reveal">
-        <div class="two-col-image with-accent">
-          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" alt="Students learning at LifePoint Academy">
-          <div class="image-badge">
+  <section class="lpa-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-home-feature lpa-reveal">
+        <div class="lpa-two-col-image lpa-with-accent lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/06/home_image-scaled.jpg" alt="LifePoint Academy students in the classroom">
+          <div class="lpa-image-badge">
             <i class="fas fa-award"></i>
-            <div class="badge-title">Gold Seal</div>
-            <div class="badge-sub">VPK Accredited</div>
+            <div class="lpa-badge-title">Gold Seal</div>
+            <div class="lpa-badge-sub">VPK Accredited</div>
           </div>
         </div>
-        <div class="two-col-content">
-          <p class="subtitle">Welcome to Our School</p>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle">Welcome to Our School</p>
           <h2>Shaping Tomorrow's Leaders Today</h2>
           <p>LifePoint Academy of Seventh-day Adventists is a Pre-K through 10th grade Christian school accredited by the Florida Association of Academic Nonpublic Schools (FAANS), the National Council for Private School Accreditation (NCPSA), and holds the VPK Gold Seal.</p>
           <p>We provide a spiritually oriented education that develops the spiritual, mental, and physical powers of each student, preparing them for a life of purpose and service.</p>
-          <a href="about.html" class="btn btn-navy">Learn More About Us</a>
+          <a href="/about/" class="lpa-btn lpa-btn-navy">Learn More About Us</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <p class="subtitle">Why Choose LifePoint</p>
-        <h2>Discover Affordable Christian Education</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-award"></i></div>
-          <h3>Scholarship Accepted</h3>
-          <p>We accept Step Up for Students and FES Scholarships, making quality Christian education accessible to every family.</p>
+  <section class="lpa-section lpa-section-alt lpa-affordability-section">
+    <div class="lpa-container">
+      <div class="lpa-affordability-panel lpa-reveal">
+        <div class="lpa-affordability-intro">
+          <p class="lpa-subtitle">Why Choose LifePoint</p>
+          <h2>Discover Affordable Christian Education</h2>
+          <p>LifePoint Academy pairs a Christ-centered learning environment with scholarship pathways and meaningful enrichment, helping families pursue private Christian education with confidence.</p>
+          <a href="/admissions/" class="lpa-btn lpa-btn-navy">Explore Admissions</a>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-medal"></i></div>
-          <h3>Gold Seal VPK</h3>
-          <p>Our VPK program is Gold Seal accredited through ACTS and NCPSA &mdash; ranked #2 in Duval County.</p>
+        <div class="lpa-affordability-visual lpa-visual-portrait lpa-visual-shift-up" style="--lpa-photo: url('/wp-content/uploads/2026/06/Lifepoint-Welcome-Image.png');">
+          <img src="/wp-content/uploads/2026/06/Lifepoint-Welcome-Image.png" alt="LifePoint Academy students">
+          <div class="lpa-affordability-note">
+            <strong>Scholarship pathways accepted</strong>
+            <span>Step Up for Students and FES help families plan for private Christian education with clarity.</span>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-robot"></i></div>
-          <h3>STEM &amp; Robotics</h3>
-          <p>Hands-on STREAM learning programs that give students innovative, real-world problem-solving experience.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-users"></i></div>
-          <h3>Student Leadership</h3>
-          <p>We develop confident, compassionate leaders through student-led programs and service opportunities.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-language"></i></div>
-          <h3>Spanish &amp; Music</h3>
-          <p>Enrichment classes including Spanish language and music instruction expand students' abilities and worldview.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon"><i class="fas fa-palette"></i></div>
-          <h3>Festival of the Arts</h3>
-          <p>Students participate in state-wide Festival of the Arts, study tours, and outdoor education trips.</p>
+        <div class="lpa-affordability-grid" aria-label="LifePoint Academy affordability and enrichment highlights">
+          <div class="lpa-affordability-item">
+            <span class="lpa-affordability-icon"><i class="fas fa-award"></i></span>
+            <div>
+              <h3>Scholarships</h3>
+              <p>Accepted programs help make private Christian education more accessible.</p>
+            </div>
+          </div>
+          <div class="lpa-affordability-item">
+            <span class="lpa-affordability-icon"><i class="fas fa-medal"></i></span>
+            <div>
+              <h3>Gold Seal VPK</h3>
+              <p>A strong early-learning start in a nurturing, accredited environment.</p>
+            </div>
+          </div>
+          <div class="lpa-affordability-item">
+            <span class="lpa-affordability-icon"><i class="fas fa-lightbulb"></i></span>
+            <div>
+              <h3>STREAM Learning</h3>
+              <p>Hands-on work helps students connect ideas to real-world thinking.</p>
+            </div>
+          </div>
+          <div class="lpa-affordability-item">
+            <span class="lpa-affordability-icon"><i class="fas fa-users"></i></span>
+            <div>
+              <h3>Student Life</h3>
+              <p>Leadership, service, arts, study tours, and outdoor education broaden the experience.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Mission -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col reverse reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80" alt="Students in chapel at LifePoint Academy">
+  <section class="lpa-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-reverse lpa-home-story lpa-reveal">
+        <div class="lpa-two-col-image lpa-photo-depth">
+          <img src="/wp-content/uploads/2026/04/LPA-Pix-Jan-2022-09-scaled.webp" alt="LifePoint Academy students learning in a faith-centered environment">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle">Our Mission</p>
-          <h2>Leading Students to Know Jesus</h2>
-          <p>Leading students to know Jesus and serve others with purpose and compassion.</p>
-          <p>At LifePoint Academy, we educate and empower Pre-K&ndash;10th grade learners and equip them with the knowledge, skills, and character necessary to achieve academic excellence in a Christ-centered, private school setting.</p>
-          <a href="about.html" class="btn btn-navy">Our Values &amp; Philosophy</a>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle">Our Mission</p>
+          <h2>Leading Students to Know Jesus and Serve Others</h2>
+          <p>LifePoint Academy exists to lead students to know Jesus and serve others with purpose and compassion.</p>
+          <div class="lpa-home-callout">
+            <i class="fas fa-cross"></i>
+            <p>Faith is not an add-on here. It shapes how students are taught, known, encouraged, and prepared to serve.</p>
+          </div>
+          <a href="/about/" class="lpa-btn lpa-btn-navy">Our Values &amp; Philosophy</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonial -->
-  <section class="testimonial-section">
-    <div class="container">
-      <div class="testimonial-card">
-        <div class="quote-icon">&ldquo;</div>
+  <section class="lpa-testimonial-section">
+    <div class="lpa-container">
+      <div class="lpa-testimonial-card">
+        <div class="lpa-quote-icon">&ldquo;</div>
         <blockquote>I would like to give thanks to the LifePoint Academy Kindergarten teacher for the patience and care she has given my granddaughter, Luna. Our family has noticed the positive influence the school has had on Luna. My husband and I pray that the Lord continues giving the teachers wisdom and blessings. May they never forget how the Lord is using them to change the kids' hearts.</blockquote>
         <cite>&mdash; Rosa R., Grandparent</cite>
       </div>
     </div>
   </section>
 
-  <!-- Johns Hopkins -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col reveal">
-        <div class="two-col-image">
-          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80" alt="Students collaborating at LifePoint Academy">
+  <!-- LifePoint Church -->
+  <section class="lpa-section">
+    <div class="lpa-container">
+      <div class="lpa-two-col lpa-home-partner lpa-reveal">
+        <div class="lpa-two-col-image lpa-photo-depth lpa-church-photo">
+          <img src="/wp-content/uploads/2026/04/Lifepoint-SDA-Photo.avif" alt="LifePoint Church community">
         </div>
-        <div class="two-col-content">
-          <p class="subtitle">Academic Partnership</p>
-          <h2>Johns Hopkins School of Education</h2>
-          <p>LifePoint Academy is a proud participant in the Johns Hopkins School of Education Culture 360 program. This partnership supports a strong school culture that encourages positive academic and civic outcomes, while celebrating the diversity of our community.</p>
-          <a href="academics.html" class="btn btn-navy">Explore Academics</a>
+        <div class="lpa-two-col-content">
+          <p class="lpa-subtitle">Our Church Family</p>
+          <h2>LifePoint Church</h2>
+          <p>LifePoint Academy shares its campus and mission with LifePoint Church, a vibrant Seventh-day Adventist congregation serving the Jacksonville community. Together, church and school form one family committed to faith, learning, and service.</p>
+          <p>We invite our academy families and neighbors to join us for Sabbath worship, Bible study, and community events throughout the year.</p>
+          <a href="https://www.lifepointcfc.org/" target="_blank" rel="noopener" class="lpa-btn lpa-btn-navy">Visit LifePoint Church</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container">
+  <section class="lpa-cta-banner">
+    <div class="lpa-container">
       <h2>Ready to Join the LifePoint Family?</h2>
       <p>Schedule a tour today and discover why families choose LifePoint Academy for their children's education.</p>
       <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-        <a href="admissions.html" class="btn btn-primary">Start Your Application</a>
-        <a href="contact.html" class="btn btn-outline">Schedule a Tour</a>
+        <a href="/admissions/" class="lpa-btn lpa-btn-primary">Start Your Application</a>
+        <a href="/contact/" class="lpa-btn lpa-btn-outline">Schedule a Tour</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="section section-alt">
-    <div class="container text-center">
-      <h2>Stay Connected</h2>
-      <p>Subscribe to receive our school newsletter and stay up to date with LifePoint Academy events.</p>
-      <form class="newsletter-form" style="max-width:500px; margin:20px auto 0;">
-        <input type="email" placeholder="Enter your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <div class="logo-text">
-            <div class="name">LIFE<span style="color:#888;">POINT</span> Academy</div>
-          </div>
+  <footer class="lpa-site-footer">
+    <div class="lpa-container">
+      <div class="lpa-footer-grid">
+        <div class="lpa-footer-about">
+          <img src="/wp-content/uploads/2026/04/Lifepoint_Academy_SDA_FLCOE_Logo.png" alt="LifePoint Academy" class="lpa-footer-logo-image">
           <p>A Pre-K through 10th grade Christian school in Jacksonville, FL, offering 100+ years of Adventist educational excellence.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Your email">
-            <button type="submit">Go</button>
-          </form>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="support.html">Support Us</a></li>
+          <ul class="lpa-footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/academics/">Academics</a></li>
+            <li><a href="/admissions/">Admissions</a></li>
+            <li><a href="/student-life/">Student Life</a></li>
+            <li><a href="/support/">Support Us</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Student Life</h4>
-          <ul class="footer-links">
-            <li><a href="student-life.html#aftercare">Aftercare</a></li>
-            <li><a href="student-life.html#calendar">Calendar</a></li>
-            <li><a href="student-life.html#lunch">School Lunch</a></li>
-            <li><a href="student-life.html#uniforms">Uniforms</a></li>
-            <li><a href="student-life.html#handbook">Handbook</a></li>
+          <ul class="lpa-footer-links">
+            <li><a href="/student-life/#aftercare">Aftercare</a></li>
+            <li><a href="/student-life/#calendar">Calendar</a></li>
+            <li><a href="/student-life/#lunch">School Lunch</a></li>
+            <li><a href="/student-life/#uniforms">Uniforms</a></li>
+            <li><a href="/student-life/#handbook">Handbook</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="lpa-footer-col">
           <h4>Contact</h4>
-          <ul class="footer-links">
+          <ul class="lpa-footer-links">
             <li><i class="fas fa-map-marker-alt" style="margin-right:6px; color:var(--gold);"></i> 4298 Livingston Road<br>Jacksonville, FL 32257</li>
             <li><a href="tel:904-268-2433"><i class="fas fa-phone" style="margin-right:6px; color:var(--gold);"></i> 904-268-2433</a></li>
             <li><a href="mailto:lifepoint@flcoe.org"><i class="fas fa-envelope" style="margin-right:6px; color:var(--gold);"></i> lifepoint@flcoe.org</a></li>
           </ul>
-          <div class="social-links" style="margin-top:16px;">
-            <a href="https://www.instagram.com/lifepointacademyjax/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/LifePointAcademyJax/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <div class="lpa-social-links" style="margin-top:16px;">
+            <a href="https://www.instagram.com/lifepointacademy?igsh=MWpzMWFiY2RqMm1mcw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DNsGnXAbC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="non-discrimination">
-      <div class="container">
+    <div class="lpa-non-discrimination">
+      <div class="lpa-container">
         The Florida Conference of Seventh-day Adventist schools admits students of any race, color, ethnicity, national origin, gender, and sexual orientation. Our schools do not discriminate on the basis of any of the aforementioned categories in decisions for admission, discipline, or application of education policies.
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://factsmgt.com" target="_blank" rel="noopener">FACTS Login</a>
+    <div class="lpa-footer-bottom">
+      <div class="lpa-container">
+        &copy; 2026 LifePoint Academy. All rights reserved. | <a href="https://aeconnect.adventisteducation.org/login" target="_blank" rel="noopener">AECONNECT Login</a>
       </div>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+</div>
