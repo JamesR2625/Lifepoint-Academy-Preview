@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 01 - Foundation, Header, Hero
  *
  * Variables, reset/base styles, buttons, top bar, navigation, hero, page headers, section subtitles.
- * Source: assets/css/style.css lines 1-602.
+ * Source: assets/css/style.css lines 1-606.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
@@ -473,6 +473,10 @@ body:has(.lpa-site),
 .lpa-hero-bg {
   position: absolute;
   inset: 0;
+  /* Home hero photo lives here, not in an inline style: WP-Optimize's
+     lazy-load rewrites inline background-image styles and corrupts the
+     quoted url() value, which silently drops the photo. */
+  background-image: url(/wp-content/uploads/2026/04/LPA-Pix-Jan-2022-19-scaled.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

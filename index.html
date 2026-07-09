@@ -60,7 +60,9 @@
 
   <!-- Hero -->
   <section class="lpa-hero">
-    <div class="lpa-hero-bg" style="background-image: url('/wp-content/uploads/2026/04/LPA-Pix-Jan-2022-19-scaled.webp');"></div>
+    <!-- Hero photo is set on .lpa-hero-bg in the CSS (snippet 01), not inline:
+         WP-Optimize lazy-load corrupts quoted url() values in inline styles. -->
+    <div class="lpa-hero-bg"></div>
     <div class="lpa-container">
       <div class="lpa-hero-content">
         <h1>Faith-Driven Education, <em>Exceptional Growth</em></h1>
@@ -135,7 +137,7 @@
           <p>LifePoint Academy pairs a Christ-centered learning environment with scholarship pathways and meaningful enrichment, helping families pursue private Christian education with confidence.</p>
           <a href="/admissions/" class="lpa-btn lpa-btn-navy">Explore Admissions</a>
         </div>
-        <div class="lpa-affordability-visual lpa-visual-portrait lpa-visual-shift-up" style="--lpa-photo: url('/wp-content/uploads/2026/06/Lifepoint-Welcome-Image.png');">
+        <div class="lpa-affordability-visual lpa-visual-portrait lpa-visual-shift-up" style="--lpa-photo: url(/wp-content/uploads/2026/06/Lifepoint-Welcome-Image.png);">
           <img src="/wp-content/uploads/2026/06/Lifepoint-Welcome-Image.png" alt="LifePoint Academy students">
           <div class="lpa-affordability-note">
             <strong>Scholarship pathways accepted</strong>

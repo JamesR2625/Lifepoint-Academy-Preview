@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 04 - Contact, Footer, Utilities, Support
  *
  * Contact form, campus map, CTA banner, footer, utility classes, support page, student-life anchor nav, and staff section headings.
- * Source: assets/css/style.css lines 1981-2666.
+ * Source: assets/css/style.css lines 1985-2670.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {

@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 06 - WPForms Contact Form
  *
  * Styles the WPForms contact form to match the LifePoint design (labels, inputs, button, validation, confirmation).
- * Source: assets/css/style.css lines 2844-2955.
+ * Source: assets/css/style.css lines 2848-2959.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {

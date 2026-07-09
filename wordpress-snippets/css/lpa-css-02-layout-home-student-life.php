@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 02 - Layout, Home, Student Life Blocks
  *
  * Shared feature layouts, stats, two-column content, homepage feature sections, student-life feature blocks, and handbook styles.
- * Source: assets/css/style.css lines 604-1252.
+ * Source: assets/css/style.css lines 608-1256.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {

@@ -3,7 +3,7 @@
  * LifePoint Academy CSS 03 - Testimonials, Academics, Faculty, Admissions, Calendar
  *
  * Testimonials, values, academics, faculty/staff cards, admissions steps, and visible calendar styling.
- * Source: assets/css/style.css lines 1254-1979.
+ * Source: assets/css/style.css lines 1258-1983.
  * Enable after the JavaScript/Font Awesome asset snippet. Keep CSS snippets active in numeric order.
  */
 add_action('wp_head', function () {
